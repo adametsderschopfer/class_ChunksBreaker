@@ -18,3 +18,11 @@ var ChunksBreaker = /** @class */ (function () {
     };
     return ChunksBreaker;
 }());
+;
+(function load() {
+    Object.defineProperty(Array.prototype, 'toChunks', {
+        value: function (CHUNK_SIZE) {
+            return ChunksBreaker.toChunks(this, CHUNK_SIZE);
+        }
+    });
+})();
