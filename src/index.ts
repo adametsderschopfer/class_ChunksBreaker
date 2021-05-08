@@ -18,11 +18,10 @@ class ChunksBreaker {
 }
 
 ;(function load() {
-
-    Object.defineProperty(Array.prototype, 'toChunks', {
-        value: function (CHUNK_SIZE: string | number) {
-            return ChunksBreaker.toChunks(this, CHUNK_SIZE);
-        }
-    });
-
+    if (!Array.prototype.hasOwnProperty('toChunks'))
+        Object.defineProperty(Array.prototype, 'toChunks', {
+            value: function (CHUNK_SIZE: string | number) {
+                return ChunksBreaker.toChunks(this, CHUNK_SIZE);
+            }
+        });
 })();

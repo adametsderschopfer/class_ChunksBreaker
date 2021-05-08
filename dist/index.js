@@ -20,9 +20,10 @@ var ChunksBreaker = /** @class */ (function () {
 }());
 ;
 (function load() {
-    Object.defineProperty(Array.prototype, 'toChunks', {
-        value: function (CHUNK_SIZE) {
-            return ChunksBreaker.toChunks(this, CHUNK_SIZE);
-        }
-    });
+    if (!Array.prototype.hasOwnProperty('toChunks'))
+        Object.defineProperty(Array.prototype, 'toChunks', {
+            value: function (CHUNK_SIZE) {
+                return ChunksBreaker.toChunks(this, CHUNK_SIZE);
+            }
+        });
 })();
