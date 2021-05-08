@@ -1,0 +1,22 @@
+{
+  "name": "class_chunksbreaker",
+  "version": "1.0.0",
+  "description": "Breaks array to chunks",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adametsofficial/class_ChunksBreaker.git"
+  },
+  "keywords": [
+    "chunks"
+  ],
+  "author": "Adametsofficial <av.styledev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adametsofficial/class_ChunksBreaker/issues"
+  },
+  "homepage": "https://github.com/adametsofficial/class_ChunksBreaker#readme"
+}
